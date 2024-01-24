@@ -1,0 +1,194 @@
+<html>
+	<head>
+	<title>Main Demo Dark(Trydo) </title>
+	<link rel ="stylesheet"  href = "CSS/style.css">
+	</head>
+	<body>
+	<button onclick="openMo()">Click me</button>
+	<div id="modal" style="display:none;">
+	<h2 id="cl">X</h2>
+	
+		<div >
+		  I open! Are you Happy now.
+		</div>
+	</div>
+	
+	<form class="full-w form-pd">
+	<div class="full-w play text-center">
+	<div class="fif-width text-end">
+	<input type="text"placeholder="Name"class="th th1">
+	</div>
+	<div class="fif-width text-left">
+	<input type="email"placeholder="Email-Id"class="th th1">
+	</div>
+	</div>
+	<div class="full-w text-center form-pd">
+	<input type="text"placeholder="Phone"class="five-n th1">
+	</div>
+	<div class="text-center form-pd">
+	<input type="submit"value="submit"class="submit transform-upper">
+	</div>
+	</form>
+	
+	
+	<div class="border-form">
+	<h1 class="text-center">Form</h1>
+	<form id="registration" onsubmit="validationForm(event)"class="full-w form-pd">
+	<div class="full-w play text-center">
+	<div class="fif-width text-end">
+	<label for="namel">Name:</label>
+	<input  type="text" id="namel"class="th th1">
+	</div>
+	<div class="fif-width text-left">
+	<label for="emaill">Email:</label>
+	<input  type="Email" id="emaill"class="th th1">
+	</div>
+	</div>
+	<div class="full-w text-center form-pd">
+	<label for="pass">Password:</label>
+	<input type="password"id="pass"class="five-n th1">
+	</div>
+	<div class="full-w text-center form-pd">
+	<label for="phone">Phone:</label>
+	<input type="tel" id="phone"class="five-n th1">
+	</div>
+	<div class="text-center form-pd">
+	<button type="submit"class="submit transform-upper">Submit</button>
+	</div>
+	</form>
+	</div>
+	<script>
+	   var x=document.getElementById('modal');
+	   
+	   // open function
+	   function openMo(){
+	     x.style.display = "block";
+	   }
+	   
+	   function closeMo(){
+	     x.style.display = "none";
+	   }
+	   
+	   onclick = function(event){
+		   if(event.target == cl){
+			closeMo();
+		   }
+		 }	
+
+
+function validationForm(event) { //any name of function
+event.preventDefault();  // prevent form submittion // Don't change this function
+
+//get form values 
+var nameval = document.getElementById("namel");
+var emailval = document.getElementById("emaill");
+var phoneval = document.getElementById("phone");
+var passval = document.getElementById("pass");
+
+//validate name
+var namel = nameval.value.trim();
+   if(namel === "") {
+   alert('Please enter your name.');
+   nameval.focus();
+   return;
+   }
+
+//validate email
+var emaill = emailval.value.trim();
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if(!emailRegex.test(emaill)) {
+       alert('Please enter a valid email address.');
+	   emailval.focus();
+	   return;
+}
+
+
+//validate password
+var pass = passval.value;
+if(pass.length < 6) {
+ alert('Password write only 6 chracters');
+ passval.focus();
+ return;
+ }
+//validate Phone
+var phone = phoneval.value;
+if(phone.length <= 10) {
+  alert('Please enter your phone no. only 10 digits.');
+  phoneval.focus();
+  return;
+}
+
+
+
+//if all validations pass //then submit the form
+ alert('Form Submitt Successfully.');
+    document.getElementById("registration").reset();
+
+	}	 
+     </script>
+	 <!-- <h1>Registration Form</h1> -->
+  <!-- <form id="registration-form" onsubmit="validateForm(event)"> -->
+    <!-- <label for="name">Name:</label> -->
+    <!-- <input type="text" id="name"> -->
+
+    <!-- <label for="email">Email:</label> -->
+    <!-- <input type="email" id="email"> -->
+
+    <!-- <label for="password">Password:</label> -->
+    <!-- <input type="password" id="password"> -->
+
+    <!-- <button type="submit">Submit</button> -->
+  <!-- </form> -->
+  <!-- <script> -->
+    <!-- function validateForm(event) { // Any name of function -->
+    <!-- event.preventDefault(); // Prevent form submission // Dont' change this function -->
+
+  <!-- // Get form field values -->
+  <!-- var nameInput = document.getElementById('name'); -->
+  <!-- var emailInput = document.getElementById('email'); -->
+  <!-- var passwordInput = document.getElementById('password'); -->
+
+  <!-- // Validate name -->
+  <!-- var name = nameInput.value.trim(); -->
+  <!-- if (name === "") { -->
+    <!-- alert('Please enter your name.'); -->
+    <!-- nameInput.focus(); -->
+    <!-- return; -->
+  <!-- } -->
+
+  <!-- // Validate email -->
+  <!-- var email = emailInput.value.trim(); -->
+  <!-- var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; -->
+  <!-- if (!emailRegex.test(email)) { -->
+    <!-- alert('Please enter a valid email address.'); -->
+    <!-- emailInput.focus(); -->
+    <!-- return; -->
+  <!-- } -->
+
+  <!-- // Validate password -->
+  <!-- var password = passwordInput.value; -->
+  <!-- if (password.length < 6) { -->
+    <!-- alert('Password should be at least 6 characters long.'); -->
+    <!-- passwordInput.focus(); -->
+    <!-- return; -->
+  <!-- } -->
+
+  <!-- // If all validations pass, submit the form -->
+  <!-- alert('Form submitted successfully!'); -->
+  <!-- document.getElementById('registration-form').reset(); -->
+<!-- } -->
+
+  </script>
+
+
+	 
+	 
+	 
+	 
+	</body>
+</html>
+
+
+
+  
+  
