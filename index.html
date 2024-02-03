@@ -1,0 +1,457 @@
+<html>
+<head>
+<title>Main Demo Dark(Trydo) </title>
+<link rel ="stylesheet"  href = "CSS/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.sidenav {
+  height: 100%;
+  width:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #f9004d;
+}
+</style>
+</head>
+<body class="body">
+<header class="full-w padding play wrapper"id="homes">
+<div class="fifty-1 flex">
+ <a href="#"><img class="img-logo"src="images/logo.png"></a>
+ </div>
+<nav class="fifty-2 font-family">
+<ul class="home " id="#first">
+<li><a href="#" class="navigation nav-clr r-lative home1"><b>Home</b></a>
+<ul class="demo-list same-list font-family back-white capitalize">
+<li class="pages"><a href="#">main demo</a></li>
+<li class="pages"><a href="First-page.html"class="nav-clr">main demo dark</a></li>
+<li class="pages"><a href="#">creative agency</a></li>
+<li class="pages"><a href="#">creative agency landing</a></li>
+<li class="pages"><a href="#">personal portfolio</a></li>
+<li class="pages"><a href="#">personal portfolio 02</a></li>
+<li class="pages"><a href="#">personal portfolio landing</a></li>
+<li class="pages"><a href="#">designer portfolio</a></li>
+<li class="pages"><a href="#">creative portfolio</a></li>
+<li class="pages"><a href="#">business</a><li>
+<li class="pages"><a href="#">digital agency</a></li>
+<li class="pages"><a href="#">minimal portfolio</a></li>
+<li class="pages"><a href="#">studio agency</a></li>
+<li class="pages"><a href="#">home particles</a></li>
+<li class="pages"><a href="#">corporate business</a></li>
+<li class="pages"><a href="#">parallax home</a></li>
+<li class="pages"><a href="#">startup agency demo</a></li>
+</ul>
+</li>
+<li><a href="Second Page.html" class="navigation nav-all"><b>About</b></a></li>
+<li><a href="#" class="navigation nav-all r-lative"><b>Pages</b></a>
+<ul class="list same-list back-white capitalize">
+<li class="pages"><a href="Third Page1 Our Services.html">our services</a></li>
+<li class="pages"><a href="#">service details</a></li>
+<li class="pages"><a href="#">our portfolio</a></li>
+<li class="pages"><a href="#">portfolio details</a></li>
+<li class="pages"><a href="#">privacy policy</a></li>
+<li class="pages"><a href="#">coming soon</a></li>
+<li class="pages"><a href="#">404 page</a></li>
+</ul>
+</li>
+<li><a href="#" class="navigation nav-all"><b>Elements</b></a>
+<ul class=" button-list same-list font-family back-white capitalize">
+<li class="pages"><a href="Fouth Page1 Buttons.html">buttons</a></li>
+<li class="pages"><a href="#">list style</a></li>
+<li class="pages"><a href="#">tab & accordion</a></li>
+<li class="pages"><a href="#">progress bar</a></li>
+<li class="pages"><a href="#">columns</a></li>
+<li class="pages"><a href="#">services box</a></li>
+<li class="pages"><a href="#">brand</a></li>
+<li class="pages"><a href="#">team members</a></li>
+<li class="pages"><a href="#">video popup</a></li>
+<li class="pages"><a href="#">gallery</a><li>
+<li class="pages"><a href="#">banner particles</a></li>
+<li class="pages"><a href="#">testimonial</a></li>
+<li class="pages"><a href="#">our pricing</a></li>
+<li class="pages"><a href="#">portfolio style</a></li>
+</ul>
+</li>
+<li><a href="#" class="navigation nav-all"><b>Shop</b></a>
+<ul class="shop-list same-list font-family back-white capitalize">
+<li class="pages"><a href="#">shop</a></li>
+<li class="pages single"><a href="#">single product</a>
+<ul class="product-list same-list font-family back-white capitalize">
+<li class="pages"><a href="#">simple product</a></li>
+<li class="pages"><a href="#">grouped product</a></li>
+<li class="pages"><a href="#">affiliate product</a></li>
+<li class="pages"><a href="#">downloadable</a></li>
+<li class="pages"><a href="#">variable product</a></li>
+</ul>
+</li>
+<li class="pages"><a href="#">my account</a></li>
+<li class="pages"><a href="#">checkout</a></li>
+<li class="pages"><a href="#">cart</a></li>
+</ul>
+</li>
+<li><a href="#" class="navigation nav-all"><b>Blog</b></a>
+<ul class=" blog-listt same-list font-family back-white capitalize">
+<li class="pages"><a href="#">default blog</a></li>
+<li class="pages"><a href="#">blog list</a></li>
+<li class="pages"><a href="#">standard post</a></li>
+<li class="pages"><a href="#">gallery post</a></li>
+<li class="pages"><a href="#">video post</a></li>
+<li class="pages"><a href="#">audio post</a></li>
+<li class="pages"><a href="#">blockquote post</a></li>
+<li class="pages"><a href="#">link post</a></li>
+</ul>
+</li>
+<li><a href="Seventh page Contact.html" class="navigation nav-all contact"><b>Contact</b></a></li>
+</ul>
+<a href="#"><i class=" fa fa-shopping-cart icon white " aria-hidden="true"></i><sup class="sup white text-decor">0</sup></a>
+
+<a href="#" class="talk text-decor nav-all letter-space">Let's talk</a>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#"class="h-ome">Home</a>
+  <a href="#">About</a>
+  <a href="#">Pages</a>
+  <a href="#">Elements</a>
+  <a href="#">Shop</a>
+  <a href="#">Blog</a>
+  <a href="#">Contact</a>
+</div>
+<span class="nav-display"style="font-size:30px;cursor:pointer;margin-left: 17px;
+}" onclick="openNav()">&#9776;</span>
+	</nav>
+</header>
+
+	
+	
+
+
+
+<div class="wrapper contner">
+  <div class="full-w wrrap">
+<h1 class="digital padding-top transform-upper">A digital<br>agency.</h1>
+</div>
+<section class="full-w flex many-business wrrap just merg direct">
+<div class="three-div  ">
+<div class="full-w">
+<img class="img-icon"src="images/icon-01.png">
+</div>
+<div class="full-w">
+<h3 class="white market capitalize">Business stratagy</h3>
+<p class="text-color para1 letter-space">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+</div>
+</div>
+ <div class="three-div">
+ <div class="full-w">
+<img class="img2-icon"src="images/icon-02.png">
+</div>
+<div class="full-w">
+<h3 class="white market capitalize">website development</h3>
+<p class="text-color para1  letter-space">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+</div>
+</div>
+ <div class="three-div thri-div">
+ <div class="full-w">
+<img class="img1-icon"src="images/icon-03.png">
+</div>
+<div class="full-w">
+<h3 class="white market capitalize">marketing & reporting</h3>
+<p class="text-color para1  letter-space">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+</div>
+</div>
+</section>
+</div>
+<section class="full-w flex direct bg-clr ">
+<div class="wrapper wrrap">
+<div class="play cols display direct column">
+<div class="secor4">
+<img class="img"src="images/about-1.jpg">
+</div>
+<div class="sec-4 ">
+<h4 class="about transform-upper font-family">About Us</h4>
+<h2 class="save1 white font-family">Save your time by using Trydo and present yours.</h2>	
+<p class="text-color paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. have suffered alteration in some form majority.</p>
+<div class="full-w flex wrap-wrap letter-space transform-upper awards">
+<div class="fuul-w full-w">	  
+<div class="line">
+</div>	
+ <p class="clr-number aw-rds awards">Awards</p>
+ <div class="full-w number">
+<p class="clr-number">800+</p>
+</div>
+</div>
+<div class="fuul-w full-w ">	
+<div class="line">
+</div>	
+	<p class="clr-number aw-rds awards">Happy clients</p>
+     <div class="full-w number">
+	<p class="clr-number">1200+</p>
+</div>
+</div>
+<div class="fuul-w full-w ">	
+<div class="line">
+</div>						  	
+	<p class="clr-number experience aw-rds awards">years of experience</p>
+ <div class="full-w number">
+	<p class="clr-number">12+</p>
+</div>					  
+</div>						 
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="business-h business">
+      <header class="full-w">
+     <h3 class="our-clr">our popular services</h3>
+	 <h2 class=" care white">We take care of your business</h2>
+	 <p class="lorem-paira">There are many variations of passages of Lorem Ipsum <br>available but the majority.</p>
+	 </header>
+	 <div class="wrapper wrrap">
+	 <div class="full-w play fl stream-self">
+	    <div class="myselfs-div cols flex fl column ">
+	         <div class="capture ">
+			       <img src="images/Captures.PNG">
+		      </div>
+			     <div class="capt-2 ">
+		        <h2 class="self white">Business Stratagy</h2>
+				<p class="my-earth">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+      </div>
+      </div>
+      <div class="myselfs-div cols selfs flex fl column">
+	          <div class="capture ">
+			       <img src="images/Capture4.PNG">
+		      </div>
+			   <div class="capt-2 ">
+	    <h2 class="self white">Website Development</h2>
+				<p class="my-earth">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+</div>
+</div>
+    </div>
+	<div class="full-w play fl margin-top">
+	      <div class="myselfs-div cols flex fl column">
+		  <div class="capture ">
+			       <img src="images/Capture2.PNG">
+		      </div>
+			    <div class="capt-2 ">
+		        <h2  class="self white">Marketing & Reporting</h2>
+				<p class="my-earth">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+      </div>
+      </div>
+      <div class="myselfs-div cols selfs flex fl column">
+	       <div class="capture ">
+			       <img src="images/Capture3.PNG">
+		      </div>
+			   <div class="capt-2 ">
+	    <h2  class="self white">Mobile Development</h2>
+				<p class="my-earth">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+</div>
+</div>
+    </div>
+</div>
+</section>
+<section class="full-w beautyfull">
+<div class="wrapper">
+<header class="full-w">
+     <h3 class="beauty center">Quality is our beauty.</h3>
+	   <h2 class="things white center">We make beautyful things</h2>
+	   </header>
+<div class="full-w cols p-d flex wrap-wrap ">
+    <div class="l-width  relative img-1 ">
+	  <div class="immg-color">
+</div>
+    <div class="app-div absolute font-family">
+	<span class="app capitalize white ">app development</span>
+	<h2 class="language capitalize white">the language of developer</h2>
+	<a href="#" class="study ">case study</a>
+</div>
+</div>
+ <div class="l-width relative img-2 ">
+   <div class="immg-color">
+</div>
+<div class="app-div absolute">
+  <span class="app capitalize white">development</span>
+  <h2 class="language capitalize white">how to find the right agency for your specific product</h2>
+     <a href="#" class="study">case study</a>
+</div>
+</div>
+  <div class="l-width relative">
+    <div class="full-w">
+        <img class="img-ryt"src="images/portfolio-1-390x532.jpg">
+</div>
+  <div class="app-div absolute">
+   <span class="app capitalize white">mobile app</span>
+   <h2 class="language capitalize white">the ultimate guide to agency</h2>
+   <a href="#" class="study">case study</a>
+</div>
+</div>
+</div>
+   <div class="full-w facted center">
+          <header class="full-w">
+       <h3 class="fun-fact capitalize white">our fun facts</h3>
+	   </header>
+  <div class="full-h play fl">
+    <div class="facts ">
+	      <span class="clr three-zero">800<sup class="super">+</sup></span>
+		  <p class="text-color stand letter-space">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.</p>
+	</div>
+    <div class="facts">
+	    <span class="clr three-zero ">1200<sup class="super">+</sup></span>
+		<p class="text-color stand letter-space">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.</p>
+</div>
+     <div class="facts">
+	     <span class="clr three-zero">700<sup class="super">+</sup></span>
+		 <p class="text-color stand letter-space">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="wrapper">
+   <section class="service">
+       <div class="full-w center font-family"> 
+	      <p class="customer white ">Phenomenal Customer Service! I'm just starting out with the team helped me so much with integrating this into my website.<span class="recommend">Highly recommend.</span></p>
+		  <span class="fatima white center"><b>fatima asrafy</b><span class="text-color">- coo, amerimar enterprises, inc.</span></span>
+   </div>
+   <ul class="container testimonial-img">
+       <li class="test-wid"><a href="#"><img class="img-border"src="images/testimonial-1.jpg"></a></li>
+		<li class="test-wid"><a href="#"><img class="img-border"src="images/testimonial-2.jpg"></a></li>
+		<li class="test-wid"><a href="#"><img class="img-border"src="images/testimonial-3.jpg"></a></li>
+		<li class="test-wid"><a href="#"><img class="img-border"src="images/testimonial-4.jpg"></a></li>
+		 <li class="test-wid"><a href="#"><img class="img-border"src="images/testimonial-5.jpg"></a></li>
+	     <li class="test-wid"><a href="#"><img class="img-border"src="images/testimonial-6.jpg"></a></li>
+	     <li class="test-wid"><a href="#"><img class="img-border"src="images/testimonial-7.jpg"></a></li>
+	     <li class="test-wid"><a href="#"><img class="img-border"src="images/testimonial-8.jpg"></a></li>
+</ul>
+</section>
+</div>
+<section class="full-w beg">
+<div class="wrapper wrrap">
+     <header class="full-w latest-margin">
+        <h2 class="news capitalize white">latest news</h2>
+        <p class=" letter-space text-color passage">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+</header>
+    <div class="full-w flex fl wrap-wrap">
+	    <div class="img-three relate">
+		<div class="image-1">
+		<div class="boy-pic">
+		</div>
+<div class="develop letter-space solute full-w">
+    <span class="capitalize app white">development</span>
+	<h2 class="capitalize white agency">have you heard? agency is your best bet to grow</h2>
+	<a href="#"class="read white">Read More</a>
+</div>
+</div>
+</div>
+    <div class="img-three relate">
+	<div class="image-2">
+	 <div class="boy-pic">
+	 </div>
+<div class="develop letter-space solute">
+    <span class="capitalize white app ">development, gallery</span>
+	<h2 class="capitalize white agency">agency works only under these conditions</h2>
+	<a href="#"class="read white">Read More</a>
+</div>
+</div>
+</div>
+    <div class="img-three relate">
+	<div class="image-3">
+	 <div class="boy-pic">
+	 </div>
+<div class="develop letter-space solute">
+    <span class="capitalize white app ">development</span>
+	<h2 class="capitalize white agency">top 10 tips to grow your agency</h2>
+	<a href="#"class="read white">Read More</a>
+</div>
+</div>
+</div>
+</div>
+   <div class="full-w">
+     <ul class="brand">
+	 <li class="img-brand"><a href="#"><img class="text-color brand-style"src="images/brand-01.png"></a></li>
+	 <li class="img-brand"><a href="#"><img  class="text-color  brand-style"src="images/brand-02.png"></a></li>
+	 <li class="img-brand"><a href="#"><img  class="text-color  brand-style"src="images/brand-03.png"></a></li>
+	 <li class="img-brand"><a href="#"><img  class="text-color brand-style"src="images/brand-04.png"></a></li>
+	 <li class=" img-brand img-brand1"><a href="#"><img  class="text-color  brand-style"src="images/brand-05.png"></a></li>
+	 <li class="img-brand"><a href="#"><img  class="text-color  brand-style"src="images/brand-03.png"></a></li>
+	 <li class="img-brand"><a href="#"><img  class="text-color  brand-style"src="images/brand-04.png"></a></li>
+	 <li class="img-brand"><a href="#"><img  class="text-color  brand-style"src="images/brand-06.png"></a></li>
+	 <li class="img-brand img-brand2"><a href="#"><img  class="text-color brand-style"src="images//brand-01.png"></a></li>
+   </ul>
+</div>
+</div>
+</section>
+<section class="full-w flex fl bot-om column">
+<div class="work r-lative pi-nk">
+<div class="pink-clr">
+<div class=" pink">
+</div>
+</div>
+<div class="red">
+<span class="ready white">ready to do this</span>
+<h2 class="let white">Let's get to work</h2>
+<a href="#" class="contact-us letter-space white">contact us</a>
+<img class="pink-img"src="images/big-logo.png">
+</div>
+</div>
+<div class="work text-color margin-tp ">
+<div class="full-w flex fl pd-ing">
+ <div class="work">
+ <div class="full-w quick ">
+   <h4 class="text-color">quick link</h4>
+</div>
+<div class="full-w">
+<ul class="work-font work-style">
+<li><a href="#"class="text-color">Works</a></li>
+<li><a href="#"class="text-color">About</a></li>
+<li><a href="#"class="text-color">Let's Talk</a></li>
+</ul>
+</div>
+</div>
+<div class="work">
+<div class="full-w quick" >
+  <h4 class="text-color">say hello</h4>
+  </div>
+  <div class="full-w">
+  <ul class=" work-font work-style">
+  <li><a href="#"class="text-color">admin@example.com</a></li>
+  <li><a href="#"class="text-color">hr@example.com</a></li>
+  <a href="#"><i class="fa fa-facebook  ic-ons text-color" aria-hidden="true"></i></a>
+   <a href="#"><i class="fa fa-linkedin ic-ons text-color" aria-hidden="true"></i></a>
+   <a href="#"><i class="fa fa-twitter ic-ons text-color" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-instagram ic-ons text-color" aria-hidden="true"></i></a>
+  </ul>
+</div>
+</div>
+</div>
+  <div class="full-w r-lative">
+  <p class="rainbow">© 2022. All rights reserved by <span><a href="#"class="themes">Rainbow-Themes.</a></span></p>
+  </div>
+  <div>
+  <a href="#homes"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+  </div>
+  </div>
+</section>
+</body>
+</html>
